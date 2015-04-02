@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+}
+
+::selection {
+  background-color: #D6DDFF;
+}
+
+.content {
+  color: $dark-ui;
+  font-family: $body-font;
+
+  max-width: 60em;
+  margin: auto;
+  padding: 0 1em;
+}
+
+.body-container {
+  margin-bottom: 1em;
+}
+
+.main {
+  box-sizing: border-box;
+
+  @media (min-width: 50em) {
+    width: 80%;
+    padding-left: 1em;
+    float: right;
+  }
+}

@@ -1,0 +1,212 @@
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.link, .post a {
+  color: #08C;
+  transition: color .1s; }
+  .link:hover, .post a:hover {
+    color: #006699; }
+
+.muted {
+  color: #999; }
+
+body {
+  margin: 0; }
+
+::-moz-selection {
+  background-color: #D6DDFF; }
+
+::selection {
+  background-color: #D6DDFF; }
+
+.content {
+  color: #333;
+  font-family: 'Merriweather', serif;
+  max-width: 60em;
+  margin: auto;
+  padding: 0 1em; }
+
+.body-container {
+  margin-bottom: 1em; }
+
+.main {
+  box-sizing: border-box; }
+  @media (min-width: 50em) {
+    .main {
+      width: 80%;
+      padding-left: 1em;
+      float: right; } }
+
+.header {
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  text-align: left; }
+
+.header-heading {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: normal;
+  margin: 0; }
+
+.header-subtitle {
+  text-transform: uppercase; }
+
+.sidebar {
+  font-family: 'Merriweather', serif;
+  box-sizing: border-box; }
+  @media (min-width: 50em) {
+    .sidebar {
+      width: 20%;
+      padding-right: 1em;
+      float: left; } }
+  @media (max-width: 49em) {
+    .sidebar {
+      border-top: 1px solid #DDD;
+      padding-top: 1em; } }
+
+.sidebar-contacts {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 2em; }
+
+@media (min-width: 50em) {
+  .sidebar-form {
+    margin-top: 1em; } }
+
+.sidebar-form-item {
+  margin: 5px 0; }
+
+.sidebar-form-label {
+  font-family: 'Open Sans Condensed', sans-serif;
+  display: block; }
+
+.sidebar-form-text, .sidebar-form-button {
+  font-family: arial, sans-serif;
+  font-size: .8em; }
+
+.sidebar-form-text {
+  border: 1px solid #DDD;
+  outline: none;
+  transition: border-color .1s;
+  width: 100%;
+  padding: .5em;
+  box-sizing: border-box; }
+  @media (max-width: 49em) {
+    .sidebar-form-text {
+      width: 50%; } }
+  .sidebar-form-text:hover {
+    border-color: #c4c4c4; }
+  .sidebar-form-text:focus {
+    border-color: #08C; }
+
+.sidebar-form-button {
+  background-color: transparent;
+  border: 1px solid #DDD;
+  outline: none;
+  transition: background-color .1s;
+  padding: .5em; }
+  .sidebar-form-button:hover {
+    background-color: #f7f7f7; }
+
+.post-preview:not(:first-child) {
+  margin-top: 1em; }
+@media (max-width: 49em) {
+  .post-preview:last-child {
+    margin-bottom: 1em; } }
+
+.post {
+  font-family: 'Merriweather', serif;
+  line-height: 2em; }
+  .post ul, .post ol {
+    padding-left: 3em; }
+  .post blockquote {
+    border-left: 3px solid #DDD;
+    margin-left: 1em;
+    padding-left: 1em; }
+  .post pre > code {
+    border-radius: 5px;
+    padding: 1em;
+    line-height: 1.5rem; }
+  .post :not(pre) > code {
+    background-color: #EEE;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+    padding: 2px 4px 0 4px; }
+
+.post-title {
+  font-weight: bold !important; }
+
+.admin-form-item {
+  margin: 5px 0; }
+
+.admin-form-label {
+  font-family: 'Open Sans Condensed', sans-serif;
+  display: block; }
+
+.admin-form-text {
+  border: 1px solid #DDD;
+  font-family: arial, sans-serif;
+  font-size: .8em;
+  outline: none;
+  transition: border-color .1s;
+  width: 100%;
+  padding: .5em;
+  box-sizing: border-box; }
+  .admin-form-text:hover {
+    border-color: #c4c4c4; }
+  .admin-form-text:focus {
+    border-color: #08C; }
+
+textarea.admin-form-text {
+  height: 30em;
+  resize: vertical; }
+
+.admin-form-button {
+  background-color: transparent;
+  border: 1px solid #DDD;
+  outline: none;
+  transition: background-color .1s;
+  padding: .5em; }
+  .admin-form-button:hover {
+    background-color: #f7f7f7; }
+
+h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin: 0; }
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin: 0; }
+
+h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin: 0; }
+
+h4, .sidebar-form-label, .post-title, .admin-form-label {
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin: 0; }
+
+h5 {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin: 0; }
+
+h6 {
+  font-size: 0.5rem;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin: 0; }
+
+
+/*# sourceMappingURL=app.css.map */

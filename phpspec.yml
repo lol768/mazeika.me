@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Mazeikame
+        psr4_prefix: Mazeikame
+        src_path: app

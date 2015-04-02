@@ -1,0 +1,54 @@
+.admin-form-item {
+  margin: 5px 0;
+}
+
+.admin-form-label {
+  @extend h4;
+
+  font-family: $head-font;
+
+  display: block;
+}
+
+.admin-form-text {
+  border: 1px solid $light-ui;
+  font: {
+    family: arial, sans-serif;
+    size: .8em;
+  }
+  outline: none;
+
+  transition: border-color .1s;
+
+  width: 100%;
+
+  padding: .5em;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: darken($light-ui, 10%);
+  }
+
+  &:focus {
+    border-color: $blue;
+  }
+}
+
+textarea.admin-form-text {
+  height: 30em;
+  resize: vertical;
+}
+
+.admin-form-button {
+  background-color: transparent;
+  border: 1px solid $light-ui;
+  outline: none;
+
+  transition: background-color .1s;
+
+  padding: .5em;
+
+  &:hover {
+    background-color: darken(white, 3%);
+  }
+}

@@ -1,0 +1,20 @@
+.header {
+  border-bottom: 1px solid $light-ui;
+
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  text-align: left;
+}
+
+.header-heading {
+  font: {
+    family: $head-font;
+    weight: normal;
+  }
+
+  margin: 0;
+}
+
+.header-subtitle {
+  text-transform: uppercase;
+}

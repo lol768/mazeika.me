@@ -1,0 +1,87 @@
+.sidebar {
+  font-family: $body-font;
+
+  box-sizing: border-box;
+
+  @media (min-width: 50em) {
+    width: 20%;
+    padding-right: 1em;
+    float: left;
+  }
+
+  @media (max-width: 49em) {
+    border-top: 1px solid $light-ui;
+
+    padding-top: 1em;
+  }
+}
+
+.sidebar-contacts {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+  line-height: 2em;
+}
+
+.sidebar-form {
+  @media (min-width: 50em) {
+    margin-top: 1em;
+  }
+}
+
+.sidebar-form-item {
+  margin: 5px 0;
+}
+
+.sidebar-form-label {
+  @extend h4;
+
+  font-family: $head-font;
+
+  display: block;
+}
+
+.sidebar-form-text, .sidebar-form-button {
+  font: {
+    family: arial, sans-serif;
+    size: .8em;
+  }
+}
+
+.sidebar-form-text {
+  border: 1px solid $light-ui;
+  outline: none;
+
+  transition: border-color .1s;
+
+  width: 100%;
+  padding: .5em;
+  box-sizing: border-box;
+
+  @media (max-width: 49em) {
+    width: 50%;
+  }
+
+  &:hover {
+    border-color: darken($light-ui, 10%);
+  }
+
+  &:focus {
+    border-color: $blue;
+  }
+}
+
+.sidebar-form-button {
+  background-color: transparent;
+  border: 1px solid $light-ui;
+  outline: none;
+
+  transition: background-color .1s;
+
+  padding: .5em;
+
+  &:hover {
+    background-color: darken(white, 3%);
+  }
+}
