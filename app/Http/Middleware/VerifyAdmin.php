@@ -13,11 +13,9 @@ class VerifyAdmin {
 	 */
 	public function handle($request, Closure $next)
 	{
-        if ( ! isset($_SERVER['PHP_AUTH_USER']))
+        if ( ! isset($_SERVER['PHP_AUTH_USER']) || true)
         {
-            header('WWW-Authenticate: Basic realm="Restricted area"');
-            header('HTTP/1.1 401 Unauthorized');
-            abort(401);
+            throw new \Exception("I was too lazy to write the auth code properly! - bionicrm");
         }
         else if ($_SERVER['PHP_AUTH_USER'] !== env('ADMIN_USER') || $_SERVER['PHP_AUTH_PW'] !== env('ADMIN_PASSWORD'))
         {
