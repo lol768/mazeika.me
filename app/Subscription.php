@@ -9,6 +9,6 @@ class Subscription extends Model {
      *
      * @var array
      */
-    protected $fillable = ['email', 'token'];
+    protected $fillable = ['email', 'token', 'expires'];
 
 }

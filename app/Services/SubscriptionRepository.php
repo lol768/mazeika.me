@@ -1,5 +1,6 @@
 <?php namespace Mazeikame\Services;
 
+use Carbon\Carbon;
 use Illuminate\Contracts\Validation\ValidationException;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Mail;
@@ -24,7 +25,8 @@ class SubscriptionRepository implements SubscriptionRepositoryContract {
 
         Subscription::create([
             'email' => $email,
-            'token' => $token
+            'token' => $token,
+            'expires' => (new Carbon)->addHours(24)
         ]);
 
         $email = strtolower($email);

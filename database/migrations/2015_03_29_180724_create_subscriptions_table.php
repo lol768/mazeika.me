@@ -19,6 +19,7 @@ class CreateSubscriptionsTable extends Migration {
             $table->string('email', 255)->unique();
             $table->string('token', 64)->unique();
             $table->boolean('confirmed');
+            $table->timestamp('expires');
             $table->timestamps();
         });
 	}
