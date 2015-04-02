@@ -1,19 +1,8 @@
 @import "variables";
 @import "partials/helpers";
+@import "partials/headings";
 @import "partials/body";
 @import "partials/header";
 @import "partials/sidebar";
 @import "partials/post";
 @import "partials/admin";
-
-@for $i from 1 through 6 {
-  h#{$i} {
-    font: {
-      size: #{3.5 - $i/2}rem;
-      weight: normal;
-    }
-
-    line-height: 1.3em;
-    margin: 0;
-  }
-}

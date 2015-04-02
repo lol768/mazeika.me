@@ -1,0 +1,11 @@
+@for $i from 1 through 6 {
+  h#{$i} {
+    font: {
+      size: #{3.5 - $i/2}rem;
+      weight: normal;
+    }
+
+    line-height: 1.3em;
+    margin: 0;
+  }
+}
